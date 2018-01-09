@@ -1,5 +1,5 @@
 class Api::PlayersController < ApplicationController
-    before_action :set_player, only: [:show, :edit, :destroy]
+    before_action :set_player, only: [:show, :update, :destroy]
 
     def index
         render json: Player.all
@@ -27,7 +27,7 @@ class Api::PlayersController < ApplicationController
     end
 
     def destroy 
-        if @player.:destroy
+        if @player.destroy
             render status: 204
         else
             render json: {message: "Unable to delete this player"}, status: 400
