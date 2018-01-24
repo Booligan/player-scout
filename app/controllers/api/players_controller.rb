@@ -49,7 +49,8 @@ class Api::PlayersController < ApplicationController
                                        :position,
                                        :nat_team,
                                        :club_team,
-                                       :img_url
+                                       :img_url,
+                                       :likes
                                       )
     end
 end
