@@ -10,7 +10,7 @@ class CreatePlayers < ActiveRecord::Migration[5.1]
       t.string :nat_team
       t.string :club_team
       t.string :img_url
-      t.integer :likes
+      t.integer :likes, :default => 0
       t.timestamps
     end
   end
