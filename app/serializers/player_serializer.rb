@@ -8,5 +8,6 @@ class PlayerSerializer < ActiveModel::Serializer
              :position,
              :nat_team,
              :club_team,
-             :img_url                                             
+             :img_url,
+             :likes                                             
 end
